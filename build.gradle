@@ -1,0 +1,22 @@
+plugins {
+    id "java"
+}
+
+group "cool.houge.avaje-http-samples"
+version "1.0-SNAPSHOT"
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    annotationProcessor("io.avaje:avaje-http-jex-generator:1.19")
+    implementation("io.avaje:avaje-inject:8.10")
+    implementation("io.avaje:avaje-jex-jetty:2.4")
+    implementation("io.avaje:avaje-jsonb:1.0-RC4")
+    implementation("io.avaje:avaje-http-api:1.19")
+}
+
+test {
+    useJUnitPlatform()
+}
